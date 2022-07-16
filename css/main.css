@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  background-color: #3b5999;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todo-form {
+  width: 300px;
+  height: 30px;
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+label{
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+input{
+  padding: 0.1rem;
+  height: 20px;
+}
+
+button{
+  border: none;
+  background-color: #3b5999;
+  color: #fff;
+  padding: 5px;
+  border-radius:.2rem;
+}
+
+#todo-list{
+  margin-top: 3rem;
+  list-style: none;
+  width: 300px;
+  padding-left: 2rem;
+}
+.item{
+  padding: 1rem;
+}
+
+#msg{
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+
+/* .content{
+  text-align: center;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+#todo-form div label{
+  margin-right: 5px;
+}
+
+#todo-form div input{
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 3px;
+  border: 1px solid #333;
+}
+
+#todo-form div .submit{
+  background-color: #3b5999;
+  color: #fff;
+}
+
+#todo-list{
+
+}
+
+#todo-list .item{
+  margin-top: 10px;
+} */
+
