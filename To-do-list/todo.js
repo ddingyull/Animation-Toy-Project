@@ -9,8 +9,8 @@ addBtn.addEventListener('click', function(){
       const addLi = document.createElement('li');       //li리스트가 들어갈 곳 만들어주기
       
       
-      const checkBox = document.createElement('input'); //input박스를 넣어주고
-      checkBox.setAttribute('type', 'checkbox')         //
+      const checkBox = document.createElement('input');
+      checkBox.setAttribute('type', 'checkbox')         
       checkBox.addEventListener('click', function(){
         if(checkBox.checked === true) {
           // checkBox.parentNode.style = "text-decoration:line-through;"

@@ -27,11 +27,32 @@
     </head>
 
     <body > 
+      <div class="homework">
+        <h3>과제 내용</h3>
+        <div>1. 글씨 클릭하면 input에 입력</div>
+        <div>2. 해당 날씨에 input값을 넣어주기</div>
+    </div>
+    <div class="homework_howto">
+      <ul>
+        <li>동작시킬 요소를 불러오기</li>
+        <li>전역변수를 추천하진 않지만 예외사항으로 불러옴</li>
+
+      </ul>
+    </div>
+    <div>
+      문제를 풀기위해 알아야하는 점 <br>
+      function(e) => <br>
+      e.target <br>
+      e.currentTarget <br>
+    </div>
+
+    <hr>
         <div>
             날짜 : <input type="text" id="date" readonly> <br>
             내용 : <input type="text" id="content"> <br>
             <button type="button" onclick="writeSchedule();">작성</button> <br>
         </div> 
+
         <div style="font-size:2em; color:green; text-align:center;">
             2022년 7월        
         </div> 
