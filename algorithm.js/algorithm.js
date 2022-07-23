@@ -206,7 +206,7 @@ let obj = fruits.map(function(item, index){
     name : item,
   }
 })
-.reduce
+// .reduce
 let reducePra = [1, 2, 3, 4, 5, 6];
 let reduce = numbers.reduce(function (sum, item, index, arr) {
   console.log(sum, item, index, arr);
@@ -272,5 +272,9 @@ let assignedOBj = Object.assign(obj1, obj2);
 console.log(assignedOBj);
 console.log(obj1);
 console.log(obj2);
+
+
+
+// 7월23일
 
 
