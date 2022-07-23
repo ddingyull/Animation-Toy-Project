@@ -83,7 +83,7 @@ console.log(array);
   console.log(arrSum3);
 
   //4안) reduce
-  let arrSum4 = 0;
+  
 
   //동일한 요소same, 다른요소만diff배열 만들기
 
