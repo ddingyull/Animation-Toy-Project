@@ -1,0 +1,210 @@
+/* COMMON */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  /* 100%는 자식요소에 영향을 줄 수 있어서 다소 위험할 수 있음 */
+  height: 100vh;
+  overflow: hidden;
+  background-color: #A6D1E6;
+  animation: sky linear 30s infinite;
+}
+
+section{
+  width: 1000px;
+  height: 600px;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 하늘 section */
+/* 전체 틀(하늘) */
+section .sky{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 태양 */
+section .sky .sun{
+  width: 180px;
+  position: absolute;
+  left: 50%;
+  /* left: 0%; */
+  margin-left: -90px;
+  /* margin-left: 0px; */
+  /* 글자수직정렬이 baseline설정을 없애주기 위해 작성 d:b */
+  display: block;
+  top: -130px;
+  /* hover했을 때 속도 지정 */
+  transition: 4s;
+  /* 기준점 바꿔주기(x, y) : 기준점은 본인의 center임 */
+  transform-origin: center 600px;
+  /* 이름, 진행형태, 지속시간, 반복횟수 */
+  animation: sun linear 15s infinite;
+}
+
+  /* hover : 태양 기준점 중심으로 움직이기
+section:hover .sky .sun{
+  transform: rotate(90deg); 
+} */
+
+/* 달 */
+section .sky .moon{
+  width: 160px;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  display: block;
+  top: -130px;
+  transition: 4s;
+  transform-origin: center 600px;
+  animation: moon linear 15s infinite;
+}
+
+/* 큰구름 */
+section .sky .cloud_1{
+  position: absolute;
+  width: 160px;
+  left: 0%;
+  top: -30px;
+  transition: 4s;
+  transform-origin: center 600px;
+  animation: cloud_1 linear 15s infinite;
+}
+
+/* 작은구름 */
+section .sky .cloud_2{
+  position: absolute;
+  width: 90px;
+  left: 16%;
+  top: 30px;
+  transition: 4s;
+  transform-origin: center 600px;
+  animation: cloud_2 linear 8s infinite;
+}
+
+
+/* 도시 section */
+section .city .city_img{
+  /* 전체 section이 1000이기 때문 */
+  width: 1000px;
+  position: absolute;
+  bottom: 0px;
+}
+
+
+/* keyframes */
+/* 하늘색상 */
+@keyframes sky {
+  0%{
+    background-color: #21243D;
+  } 
+  25%{
+    background-color: #A6D1E6;
+  }
+  50%{
+    background-color: #FF8B8B;
+  }
+  75%{
+    background-color: #C06C84;
+  }
+  100%{
+    background-color: #524C84;
+  }
+}
+
+
+/* 태양 애니메이션 */
+@keyframes sun {
+  0%{
+    transform: rotate(-90deg);
+    opacity: 0;
+  } 
+  25%{
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50%{
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  75%{
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  100%{
+    transform: rotate(270deg);
+    opacity: 0;
+  }
+}
+
+/* 달 애니메이션 */
+@keyframes moon {
+  0%{
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  25%{
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  50%{
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  75%{
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+}
+
+/* 큰구름 애니메이션 */
+/* left였다가 right 섞어서 쓰면 안될 위험이 있음  */
+@keyframes cloud_1 {
+  0%{
+    left: 0%;
+    opacity: 0;
+  }
+  50%{
+    left: 100%;
+  }
+  100%{
+    left: 0%;
+    /* opacity: 0; */
+  }
+}
+
+/* 작은구름 애니메이션 */
+@keyframes cloud_2 {
+  0%{
+    left: 12%;
+    /* opacity: 0; */
+  }
+  25%{
+    left: 62%;
+    /* opacity: 0; */
+  }
+  50%{
+    left: 112%;
+    /* opacity: 0; */
+  }
+  75%{
+    left: 62%;
+    /* opacity: 0; */
+  }
+  100%{
+    left: 12%;
+    /* opacity: 0; */
+  }
+}

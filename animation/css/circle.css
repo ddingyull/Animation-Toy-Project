@@ -1,0 +1,50 @@
+/* body{
+  width: 100vw;
+  100%는 자식요소에 영향을 줄 수 있어서 다소 위험할 수 있음
+  height: 100vh;
+ } */
+
+/* circle */
+.circle_border {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #555;
+  position: relative;
+}
+
+.circle_border .circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: yellow;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 4s;
+  /* transform-origin: center 250px; */
+  animation: circle linear 10s infinite;
+}
+
+@keyframes circle {
+  0%{
+    left: 0%;
+    top: 0%;
+  } 
+  25%{
+    left: 90%;
+    top: 0%;
+    transform: translate(40, 50);
+  }
+  50%{
+    left: 100%;
+    top: 90%;
+  }
+  75%{
+    left: 0%;
+    top: 90%;
+  }
+  100%{
+    left: 0%;
+    top: 0%;
+  }
+}

@@ -217,7 +217,8 @@ function solution(numbers) {
   //없는 숫자들의 합을 0으로 선언
   let emptySum = 0;
 
-  //피드백 : i<numbers.length로 선언하면 모두 확인할 수 없음, 9까지 점검하기 위해 10으로 간단히 해결가능
+  //피드백 : i<numbers.length로 선언하면 모두 확인할 수 없음, 
+  //9까지 점검하기 위해 10으로 간단히 해결가능
   for(let i = 0; i<10; i++){
     if(!number.includes(i)) {emptySum += i}; 
   }
