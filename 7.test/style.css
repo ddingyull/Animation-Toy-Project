@@ -1,0 +1,250 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  background: radial-gradient(rgb(232, 232, 232), #fff, #fff);
+  
+}
+
+header {
+  position: relative;
+  width: 100%;
+  /* border-bottom: 1px solid #001; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 5vw;
+  z-index: 2;
+  background-color: transparent;
+}
+
+header #snb {
+  display: none;
+}
+
+header h1 a {
+  font: bold 24px/50px "Architects Daughter";
+  color: #001;
+}
+
+header #gnb {
+  /* display: flex; */
+  display: none;
+}
+
+header #gnb li {
+  margin: 0px 20px;
+}
+
+header #gnb li a {
+  font: 16px/1 "Architects Daughter";
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+header #gnb li a:hover{
+  text-decoration: underline;
+}
+
+header .sns {
+  /* display: flex; */
+  display: none;
+}
+
+header .sns li {
+  margin: 0 10px;
+}
+
+header .sns li a {
+  font: 16px;
+  color: #fff;
+}
+
+/* VIDEO */
+figure {
+  width: 0%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 2s;
+}
+
+figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+figure .text p {
+  font: 900 6vw/1 "Montserrat";
+  color: #fff;
+  text-shadow: 1px 3px 5px rgba(83, 83, 83, 0.579);
+  transition: all 1.5s;
+  text-align: center;
+}
+
+figure .text p.scale_up{
+  transform: scale(1.3);
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font: 12px/1 "arial";
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 5vh 5vw;
+  z-index: 2;
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* RESPONSIBLE WEB */
+@media screen and (max-width: 750px) {
+  header {
+    background-color: transparent !important;
+    border-bottom: none !important;
+  }
+  
+  header #gnb {
+    display: none !important;
+  }
+
+  header .sns {
+    display: none !important;
+  }
+
+  header #snb {
+    display: block;
+  }
+
+  header .btn_menu {
+    display: block;
+    color: #001;
+  }
+
+  header #snb .sub_menu {
+    position: absolute;
+    right: 5vw;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 1px solid rgba(182, 182, 182, 0.559);
+    border-radius: 10px;
+    text-align: right;
+    opacity: 1;
+    transition: 0.4s;
+  }
+
+  header #snb .sub_menu li {
+    padding: 10px 0px;
+    font: 16px/1 "Architects Daughter";
+  }
+
+  header #snb .sub_menu li a i {
+    margin-left: 8px;
+  }
+
+  figure .text p {
+    font-size: 10vw;
+  }
+
+  figure .text ul {
+    margin: 3px 0;
+  }
+
+  header #snb .sub_menu.hide {
+    opacity: 0;
+  }
+}
+
+/* Left Section TEXT */
+.left_side_text {
+  position: absolute;
+  left: -30vw;
+  top: 53%;
+  transform: translate(0, -50%);
+  transition: all 2s;
+  /* transition-delay: 1s; */
+}
+
+.left_side_text p {
+  font: normal 4vw/1 "Montserrat";
+  color: #001;
+}
+
+.left_side_text ul {
+  display: flex;
+  margin-top: 10px;
+  margin-left: -5%;
+}
+
+.left_side_text ul li {
+  margin: 20px 10px;
+  border: 1px solid #001;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.left_side_text ul li i {
+  font-size: 20px;
+  color: #001;
+  margin-right: 10px;
+}
+
+.left_side_text ul li strong {
+  font: 14px/1 "Architects Daughter";
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: #001;
+}
+
+@media screen and (max-width: 1150px) {
+  .left_side_text ul {
+    margin-top: 5px;
+    margin-left: -7%;
+  }
+  
+  .left_side_text ul li {
+    margin: 20px 9px;
+    /* border: none; */
+  }
+  
+  .left_side_text ul li i {
+    font-size: 14px;
+  }
+  
+  .left_side_text ul li strong  {
+    display: none;
+  }
+}
+
+/* // complete */
