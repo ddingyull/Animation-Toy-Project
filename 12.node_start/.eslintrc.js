@@ -3,5 +3,5 @@ module.exports = {
   rules: {
     'no-console': 'off',
   },
-  lintOnsave: false,
+  // lintOnsave: false,
 };
