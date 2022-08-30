@@ -1,6 +1,7 @@
 {
+  "type": "module",
   "scripts": {
-    "server": "nodemon service.js"
+    "server": "nodemon server.js"
   },
   "devDependencies": {
     "@types/node": "^18.7.12",
