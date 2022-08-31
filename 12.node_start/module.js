@@ -12,10 +12,10 @@
 // console.log(animals);
 // showAnimals();
 
-// ES6 문법 : from뒤에 확장자명 적어주기
-import { animals, showAnimals } from './animals.js';
-console.log(animals);
-showAnimals();
+// // ES6 문법 : from뒤에 확장자명 적어주기
+// import { animals, showAnimals } from './animals.js';
+// console.log(animals);
+// showAnimals();
 
-//js 파일 전체를 animals로 전체받아오라는 의미
-import * as animals from './animals.js';
+// //js 파일 전체를 animals로 전체받아오라는 의미
+// import * as animals from './animals.js';
